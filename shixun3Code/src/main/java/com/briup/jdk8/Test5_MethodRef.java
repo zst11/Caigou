@@ -14,7 +14,6 @@ public class Test5_MethodRef {
 //        使用类名引用非静态方法的时候
 //        实现的抽象方法的第一个参数作为所属类型的对象
 //        从第二个参数开始作为参数列表
-
     }
     public static int len(String s){
         return s.length();
