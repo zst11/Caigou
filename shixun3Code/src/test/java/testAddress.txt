@@ -1,0 +1,6 @@
+id=1
+ClassName=com.briup.chap13.bean.Address
+propertyName=province,propertyValue=江苏省,propertyType=String
+propertyName=city,propertyValue=苏州市,propertyType=String
+propertyName=street,propertyValue=学院路,propertyType=String
+

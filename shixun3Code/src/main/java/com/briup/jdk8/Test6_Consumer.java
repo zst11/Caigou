@@ -1,5 +1,6 @@
 package com.briup.jdk8;
 
+import java.io.Serializable;
 import java.util.function.Consumer;
 
 public class Test6_Consumer {
