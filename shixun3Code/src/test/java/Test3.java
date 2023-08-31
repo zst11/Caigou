@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.awt.*;
 import java.util.*;
 
@@ -17,3 +18,16 @@ public class Test3 {
         String s = sb.toString();
     }
 }
+=======
+public class Test3 {
+    enum Singleton{
+        INSTANCE;
+        public void test(){
+            System.out.println("test");
+        }
+    }
+    public static void main(String[] args) {
+        Singleton.INSTANCE.test();
+    }
+}
+>>>>>>> 69b6c0cf297bc4cc5337f038860bb372fcdfad3e

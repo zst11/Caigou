@@ -2,8 +2,13 @@ import java.io.*;
 
 public class Test {
     public static void main(String[] args) {
+<<<<<<< HEAD
 //        new Exception()
         File fileAddress = new File("D:\\github_code\\Caigou\\shixun3Code\\src\\test\\java\\test.txt");
+=======
+        new Exception()
+        File fileAddress = new File("D:\\github_code\\Caigou\\shixun3Code\\src\\test\\java\\testAddress.txt");
+>>>>>>> 69b6c0cf297bc4cc5337f038860bb372fcdfad3e
         File fileStudent = new File("D:\\github_code\\Caigou\\shixun3Code\\src\\test\\java\\testStudent.txt");
         FileReader in = null;
         BufferedReader bf = null;
