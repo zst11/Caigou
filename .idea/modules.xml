@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Caigou.iml" filepath="$PROJECT_DIR$/.idea/Caigou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shixun3Code/shixun3Code.iml" filepath="$PROJECT_DIR$/shixun3Code/shixun3Code.iml" />
+    </modules>
+  </component>
+</project>
