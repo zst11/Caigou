@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // BOW 浏览器对象
+    // window浏览器窗口对象 通过 window 来获取其对应的属性和方法 window可以省略
+    var flag =  window.confirm("确认删除？")
+    alert(flag)
+
+    var i = 0
+    // 按时间周期性的执行 定时器
+    setInterval(function(){
+        i++
+        console.log(i)
+    },2000)
+
+    // 延迟指定时间执行一次 定时器
+    setTimeout(function(){
+        alert("js")
+    },3000) 
+
+    // location 地址栏对象 获取地址栏，也可通过href设置，会自动跳转到设置的网页
+    alert(location.href)
+    location.href = "https://www.baidu.com"
+</script>
+</html>

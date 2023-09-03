@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script> 
+    // 类似于Java中数组，长度可变，类型可变
+    var arr = new Array(1,2,3,4)
+    var arr1 = [1,2,3,4]
+    console.log(arr)
+    console.log(arr1)
+    arr[10] = 50 // 别的索引没有的就是undifend
+    arr[9] = 'A'
+    // for 所有元素都会遍历
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+        
+    }
+    // forEach 只遍历有值的
+    arr.forEach(function(element){
+        console.log(element)
+    });
+    // 数组尾部添加
+    arr.push(11)
+    arr.splice(10)
+
+    var str = "hello "
+    var str1 = new String("hello")
+
+    // 自定义对象
+    var user={
+        name: "tom",
+        age: 10,
+        gender: "male",
+        eat:function(e){
+            alert(e)
+        },
+        eat1(){
+            alert("不吃")
+        }
+    }
+    user.eat("吃")
+
+    // json 用来进行前后端传递比较复杂的数据
+    var userStr = '{"name":"jerry","age":"18","adderss":["北京","上海"]}'
+    alert(userStr)
+    // 需要访问json字符串时，要将其转化为对象
+    var jsObject =  JSON.parse(userStr)
+    alert(jsObject.name)
+    // 对象转换为json字符串
+    var jsonStr = JSON.stringify(jsObject)
+    alert(jsonStr)
+</script>
+</html>
