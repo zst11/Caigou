@@ -1,16 +1,24 @@
+import java.util.*;
+
 public class Test5 {
     public static void main(String[] args) {
-        int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
-        String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
-        StringBuffer sb = new StringBuffer();
-        int nums = 1000;
-        for (int i = 0; i < values.length; i++) {
-            if (nums<=0) break;
-            while (nums >= values[i]){
-                nums -= values[i];
-                sb.append(symbols[i]);
-            }
+        String path = "//home/lib/";
+        String[] split = path.split("/");
+        LinkedList<String> stack = new LinkedList<>();
+        for (String s : split) {
+            if ("..".equals(s)&&!stack.isEmpty()) stack.pop();
+            if (!".".equals(s)&&!"..".equals(s)&&!"".equals(s)) stack.push(s);
+        }
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()){
+            sb.insert(0,stack.pop());
+            sb.insert(0,"/");
+        }
+
+        if (sb.length()==0){
+            sb.append("/");
         }
         String s = sb.toString();
+
     }
 }
