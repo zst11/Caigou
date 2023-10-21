@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--注:三级标签名不要相同-->
+<environment>
+    <gather class="com.briup.client.GatherImpl">
+        <gather-file-path>data-file-simple</gather-file-path>
+        <gather-backup-file-path>gather-backup</gather-backup-file-path>
+    </gather>
+
+    <logger class="com.briup.smart.env.util.LogImpl">
+    </logger>
+
+    <backup class="com.briup.smart.env.util.BackupImpl">
+    </backup>
+
+    <client class="com.briup.client.ClientImpl">
+        <client-host>192.168.168.100</client-host>
+        <client-port>2444</client-port>
+    </client>
+
+</environment>
