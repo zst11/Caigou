@@ -1,5 +1,0 @@
-id=2
-ClassName=com.briup.chap13.bean.Student
-propertyName=userId,propertyValue=1001,propertyType=Integer
-propertyName=name,propertyValue=张三,propertyType=String
-propertyName=address,propertyRef=1
